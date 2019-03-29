@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="155dp"
+             android:layout_margin="@dimen/margin_15dp"
+             android:background="@color/white"
+             android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/im_coupon_bg"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_coupon_canuse"/>
+
+    <TextView
+        android:id="@+id/tv_coupon_canuse"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/coupon_get_it_now"
+        android:textColor="@color/text_color_coupon"
+        android:textSize="@dimen/height_15dp"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/tv_new_customer_coupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_17dp"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:text="@string/coupon_new_only"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_15sp"/>
+
+    <TextView
+        android:id="@+id/tv_coupon_interest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_11dp"
+        android:text="@string/coupon_interest_coupon"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_max_loan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_17dp"
+        android:layout_marginTop="57dp"
+        android:text="@string/coupon_infact_loan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_12sp"/>
+
+    <TextView
+        android:id="@+id/tv_dead_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_17dp"
+        android:layout_marginTop="87dp"
+        android:text="@string/coupon_loan_deadline"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_12sp"/>
+
+    <ImageView
+        android:id="@+id/ig_coupon_expired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="@dimen/margin_14dp"
+        android:layout_marginBottom="@dimen/margin_12dp"
+        android:src="@mipmap/ic_coupon_expired"
+        android:visibility="gone"/>
+
+</FrameLayout>

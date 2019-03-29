@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/login_icon"
+        app:layout_marginTopPercent="20%p" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/login_load_note"
+        app:layout_marginTopPercent="40%p" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="320dp"
+        android:layout_height="@dimen/height_50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_ff2cc0ff_5"
+        android:onClick="onLoginClick"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        app:layout_marginTopPercent="75%p" />
+
+    <Button
+        android:id="@+id/btn_regit"
+        android:layout_width="320dp"
+        android:layout_height="@dimen/height_50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_ff95dfff_5"
+        android:onClick="onRegitClick"
+        android:text="@string/regit"
+        android:textColor="@color/white"
+        app:layout_marginTopPercent="86%p" />
+</androidx.percentlayout.widget.PercentFrameLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_head"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:onClick="onClickHead">
+
+            <ImageView
+                android:id="@+id/img_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_20dp"
+                android:onClick="onClickImgHead"
+                android:src="@mipmap/default_icon"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="90dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_login_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_login_state"
+                    android:textColor="@color/FFBEBEBE"
+                    android:textSize="@dimen/textsize_18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_12dp"
+                    android:textColor="@color/FFC7C7C7"
+                    android:textSize="@dimen/textsize_14sp"
+                    android:visibility="gone"
+
+                    />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/margin_7dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:background="@drawable/shape_dash_line"
+            android:layerType="software"/>
+
+        <FrameLayout
+            android:id="@+id/fl_history_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@drawable/selector_fff0f0f0_menu"
+            android:onClick="onClickHistoryOrder">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_25dp"
+                android:src="@mipmap/history_order"/>
+
+            <TextView
+                style="@style/drawer_men_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/history_order"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp"
+            android:background="@drawable/selector_fff0f0f0_menu"
+            android:onClick="onClickCoupon">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_25dp"
+                android:src="@mipmap/coupon"/>
+
+            <TextView
+                style="@style/drawer_men_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/coupon"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_contract_us"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp"
+            android:background="@drawable/selector_fff0f0f0_menu"
+            android:onClick="onClickContractUs">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_25dp"
+                android:src="@mipmap/contract"/>
+
+            <TextView
+                style="@style/drawer_men_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contract_us"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_invate_frend"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp"
+            android:background="@drawable/selector_fff0f0f0_menu"
+            android:onClick="onClickInvateFriend">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_25dp"
+                android:src="@mipmap/invate_friend"/>
+
+            <TextView
+                style="@style/drawer_men_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/invate_friend"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp"
+            android:background="@drawable/selector_fff0f0f0_menu"
+            android:onClick="onClickAboutUs"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_25dp"
+                android:src="@mipmap/about_us"/>
+
+            <TextView
+                style="@style/drawer_men_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_us"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_about_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp"
+            android:background="@drawable/selector_fff0f0f0_menu"
+            android:onClick="onClickAboutPay"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_25dp"
+                android:src="@mipmap/about_pay"/>
+
+            <TextView
+                style="@style/drawer_men_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_pay"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_set"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp"
+            android:background="@drawable/selector_fff0f0f0_menu"
+            android:onClick="onClickSet">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_25dp"
+                android:src="@mipmap/set"/>
+
+            <TextView
+                style="@style/drawer_men_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set"/>
+        </FrameLayout>
+
+        <View
+            android:id="@+id/v_line_logout"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginRight="@dimen/margin_20dp"
+            android:background="@drawable/shape_dash_line"
+            android:layerType="software"
+            android:visibility="gone"/>
+
+        <FrameLayout
+            android:id="@+id/fl_login_out"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_45dp"
+            android:layout_marginTop="@dimen/margin_7dp"
+            android:background="@drawable/selector_fff0f0f0_menu"
+            android:onClick="onClickLoginOut"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_25dp"
+                android:src="@mipmap/login_out"/>
+
+            <TextView
+                style="@style/drawer_men_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_out"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

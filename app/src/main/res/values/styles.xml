@@ -1,0 +1,168 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:typeface">monospace</item>
+        <item name="actionOverflowMenuStyle">@style/toolbarMenuStyle</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+
+
+        <!-- 去除Activity顶部黑线 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--   &lt;!&ndash; 系统状态栏背景设置透明 &ndash;&gt;
+           <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">@android:color/transparent</item>-->
+        <item name="android:windowBackground">@android:color/white</item>
+
+    </style>
+
+    <style name="NoTitle" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+
+    <style name="AppThemeDialogIsTranslucent" parent="Theme.AppCompat.Dialog">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--        <item name="android:windowActionBar">false</item>-->
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--        <item name="android:windowNoTitle">true</item>-->
+        <!--是否启用标题栏-->
+        <!-- <item name="android:background">@null</item>-->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--  <item name="android:windowFullscreen">true</item>-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:windowAnimationStyle">@style/animationUp</item>
+    </style>
+
+    <!-- Toolbar style-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--自定义toolbar菜单样式-->
+    <style name="toolbarMenuStyle" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+
+        <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+        <!-- <item name="android:actionMenuTextColor">@color/white</item>-->
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+        <!--<item name="actionMenuTextColor">@color/white</item>-->
+
+        <!-- 弹出层背景颜色 -->
+        <item name="android:popupBackground">@color/white</item>
+
+        <!-- 弹出层垂直方向上的偏移，负值会覆盖toolbar -->
+        <item name="android:dropDownVerticalOffset">5dp</item>
+        <!-- <item name="android:textColorSecondary">11</item>-->
+
+
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">-2dp</item>
+
+        <!--文字颜色-->
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+
+
+
+    <style name="Dialog_Tip" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--  <item name="android:windowFrame">true</item>-->
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="mProgress_circle">
+        <item name="android:indeterminateDrawable">@drawable/rotate_progress_bar</item>
+        <item name="android:minWidth">25dp</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:maxWidth">60dp</item>
+        <item name="android:maxHeight">60dp</item>
+    </style>
+
+    <style name="animationUp" parent="android:Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:activityCloseExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+
+    <!--    标题内容样式-->
+    <style name="style_title_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textsize_16sp</item>
+    </style>
+
+
+    <declare-styleable name="XRefreshView">
+        <attr name="isHeightMatchParent" format="boolean" />
+        <attr name="isWidthMatchParent" format="boolean" />
+        <attr name="autoRefresh" format="boolean" />
+        <attr name="autoLoadMore" format="boolean" />
+    </declare-styleable>
+
+    <style name="Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="pushtime_dialog_animation">
+        <item name="android:windowEnterAnimation">@anim/anim_dialog_animation_appear</item>
+        <item name="android:windowExitAnimation">@anim/anim_dialog_animation_disappear</item>
+    </style>
+
+
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+   <style name="view_line_h">
+       <item name="android:layout_width">match_parent</item>
+       <item name="android:layout_height">1dp</item>
+       <item name="android:background">@color/FFE0E0E0</item>
+   </style>
+    <style name="drawer_men_text_style">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/margin_71dp</item>
+        <item name="android:textSize">@dimen/textsize_14sp</item>
+        <item name="android:textColor">@color/FF1D1D26</item>
+    </style>
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+</resources>

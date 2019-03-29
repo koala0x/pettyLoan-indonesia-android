@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_phone"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/margin_15dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/send_vetify_code_note"-->
+        <!--android:textSize="13sp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_send_vetifycode"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="@dimen/margin_11dp"-->
+        <!--android:onClick="onClickSendVetifyCode"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/send_vetify_code"-->
+        <!--android:textColor="@color/theme_color"-->
+        <!--android:textSize="13sp" />-->
+
+    <!--<com.myLoan.br.view.VerificationCodeView-->
+        <!--android:id="@+id/verificationcodeview"-->
+        <!--android:layout_width="220dp"-->
+        <!--android:layout_height="51dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:vcv_et_cursor="@drawable/et_cursor"-->
+        <!--app:vcv_et_inputType="number"-->
+        <!--app:vcv_et_number="4"-->
+        <!--app:vcv_et_text_color="#545454"-->
+        <!--app:vcv_et_width="75dp" />-->
+
+    <EditText
+        android:id="@+id/edit_pw"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:background="@null"
+        android:hint="@string/set_login_pw"
+        android:inputType="textPassword"
+        android:textColor="@color/FF989898"
+        android:maxLength="20"
+        android:textColorHint="@color/FF989898"
+        android:textSize="@dimen/textsize_16sp" />
+
+    <View
+        style="@style/view_line_h"
+        android:layout_marginLeft="@dimen/margin_20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:text="@string/set_login_pw_rule"
+        android:textColor="@color/FFCCCCCC"
+        android:textSize="@dimen/textsize_12sp" />
+
+    <EditText
+        android:id="@+id/edit_re_pw"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:background="@null"
+        android:hint="@string/set_login_re_pw"
+        android:maxLength="20"
+        android:inputType="textPassword"
+        android:textColor="@color/FF989898"
+        android:textColorHint="@color/FF989898"
+        android:textSize="@dimen/textsize_16sp" />
+
+    <View
+        style="@style/view_line_h"
+        android:layout_marginLeft="@dimen/margin_20dp" />
+
+
+    <Button
+        android:id="@+id/btn_finshi_set"
+        android:layout_width="320dp"
+        android:onClick="onClickFinshiSet"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_21dp"
+        android:background="@drawable/shape_ff2cc0ff_5"
+        android:text="@string/finshi_set"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+</LinearLayout>

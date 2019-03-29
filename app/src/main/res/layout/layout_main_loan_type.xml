@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="336dp"
+        android:layout_height="125dp">
+
+        <TextView
+            android:id="@+id/tv_loan_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="17dp"
+            android:textColor="@color/main_text_blue"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/main_text_blue" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:id="@+id/tv_one_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_blue"
+                android:layout_gravity="center|start"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_one_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_blue"
+                android:layout_gravity="center|end"
+                android:textSize="16sp" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:id="@+id/tv_two_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:textColor="@color/main_text_blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_two_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_blue"
+                android:layout_gravity="center|end"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+</FrameLayout>

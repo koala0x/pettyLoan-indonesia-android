@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="190dp"
+             android:layout_height="@dimen/height_170dp"
+             android:background="@drawable/shape_bg_item_ffffff_5">
+
+    <ImageView
+        android:id="@+id/ig_coupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_20dp"
+        android:src="@mipmap/ic_success"/>
+
+    <TextView
+        android:id="@+id/tv_coupon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/margin_27dp"
+        android:text="@string/coupon_loan_success"
+        android:textColor="@color/text_color_coupon_success"
+        android:textSize="@dimen/textsize_15sp"/>
+
+</FrameLayout>

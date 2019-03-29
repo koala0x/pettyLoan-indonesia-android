@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_discount_coupon_background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="151dp"
+        android:layout_marginBottom="143dp"
+        android:src="@drawable/close" />
+    <LinearLayout
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_popup"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="285dp"
+            android:layout_height="115dp">
+
+            <ImageView
+                android:layout_width="285dp"
+                android:layout_height="115dp"
+                android:scaleType="center"
+                android:src="@drawable/update_banner" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/update_version"
+                android:textColor="@color/captcha_fault" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_popup_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="17dp"
+            android:text=""
+            android:textColor="@color/main_loan_list"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_popup_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="23dp"
+            android:text=""
+            android:textColor="@color/main_loan_list"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="21dp"
+            android:background="@color/popup_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_popup_left"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/main_loan_list"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_popup_right"
+                android:gravity="center"
+                android:text="@string/update"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <com.myLoan.br.view.ProgressBeautifulView
+                android:id="@+id/pv_one"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

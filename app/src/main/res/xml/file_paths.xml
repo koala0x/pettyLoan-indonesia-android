@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <external-path
+            name="Download1"
+            path="Android/data/com.ctj.swk.Myloan" />
+        <!--<external-files-path-->
+            <!--name="Download2"-->
+            <!--path="." />-->
+        <cache-path
+            name="Download3"
+            path="." />
+    </paths>
+</resources>

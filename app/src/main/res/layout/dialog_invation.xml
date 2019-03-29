@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="290dp"
+    android:layout_height="250dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_30dp"
+        android:text="@string/input_invation"
+        android:textColor="@color/FF333333"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/img_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/margin_13dp"
+        android:layout_marginRight="@dimen/margin_13dp"
+        android:src="@mipmap/cancel" />
+
+    <com.myLoan.br.view.VerificationCodeView
+        android:id="@+id/verificationcodeview"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginLeft="@dimen/margin_26dp"
+        android:layout_marginTop="@dimen/margin_70dp"
+        android:layout_marginRight="@dimen/margin_26dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:vcv_et_cursor="@drawable/et_cursor"
+        app:vcv_et_inputType="text"
+        app:vcv_et_number="6"
+        app:vcv_et_text_color="#545454"
+        app:vcv_et_width="75dp" />
+
+    <Button
+        android:id="@+id/btn_finshi_set"
+        android:layout_width="258dp"
+        android:layout_height="@dimen/height_45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="142dp"
+        android:background="@drawable/shape_ff2cc0ff_5"
+        android:text="@string/finshi_set"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_18sp" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="206dp"
+        android:text="@string/pass"
+        android:textColor="@color/_333333" />
+</FrameLayout>

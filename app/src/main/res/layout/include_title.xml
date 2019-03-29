@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tittlebar_hight"
+    android:background="@color/theme_color"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_back"
+        android:layout_width="50dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_back" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/style_title_content"
+        android:layout_gravity="center" />
+
+    <FrameLayout
+        android:id="@+id/fl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:layout_marginRight="@dimen/margin_15dp">
+
+        <ImageView
+            android:id="@+id/img_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_15sp" />
+
+    </FrameLayout>
+
+</FrameLayout>

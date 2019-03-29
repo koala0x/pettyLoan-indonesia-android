@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_break_back_ee"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50dp">
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_62dp"
+                android:text="+62"
+                android:textSize="@dimen/textsize_16sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_23dp"
+                android:src="@mipmap/phone"/>
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="100dp"
+                android:background="@null"
+                android:hint="@string/input_phone"
+                android:inputType="phone"
+                android:maxLength="12"
+                android:textSize="@dimen/textsize_16sp"/>
+        </FrameLayout>
+
+        <View
+            style="@style/view_line_h"
+            android:layout_marginLeft="@dimen/margin_60dp"/>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_23dp"
+                android:src="@mipmap/ic_code"/>
+
+            <EditText
+                android:id="@+id/edit_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_62dp"
+                android:background="@null"
+                android:hint="@string/input_vertify_code"
+                android:textSize="@dimen/textsize_16sp"/>
+
+            <TextView
+                android:id="@+id/tv_verify_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/padding_20dp"
+                android:text="@string/send_vetify_code"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/textsize_16sp"/>
+        </FrameLayout>
+
+        <View
+            style="@style/view_line_h"
+            android:layout_marginLeft="@dimen/margin_60dp"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <CheckBox
+
+            android:id="@+id/cb_protrol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_21dp"
+            android:backgroundTint="@color/theme_color"
+            android:checked="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_regit_protrol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_60dp"
+                android:text="@string/regit_proctol"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/textsize_12sp"/>
+
+            <TextView
+                android:id="@+id/tv_regit_protrol2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_60dp"
+                android:text="@string/regit_proctol_end"
+                android:textSize="@dimen/textsize_12sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_regit"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_25dp"
+        android:background="@drawable/shape_ff2cc0ff_5"
+        android:onClick="onClickRegit"
+        android:text="@string/regit"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_go_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_21dp"
+        android:text="@string/go_login"
+        android:textColor="@color/text_color_gray"
+        android:textSize="@dimen/textsize_14sp"/>
+
+</LinearLayout>

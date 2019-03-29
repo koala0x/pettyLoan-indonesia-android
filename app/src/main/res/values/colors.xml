@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/theme_color</color>
+    <color name="colorPrimaryDark">@color/theme_color</color>
+    <color name="colorAccent">@color/theme_color</color>
+
+    <color name="transparent_30_percent">#4DFFFFFF</color>
+
+    <color name="FF000000">#FF000000</color>
+    <color name="black">#000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_02a">#44FFFFFF</color>
+
+    <color name="error_hint_color">#FFD7D7D7</color>
+
+    <!--基调颜色-->
+    <color name="theme_color">#ff2cc0ff</color>
+    <color name="FC7558">#FC7558</color>
+    <color name="view_bg_fff5f5f5">#fff5f5f5</color>
+    <color name="text_black_ff585858">#ff585858</color>
+    <color name="FF585858">#ff585858</color>
+    <color name="FF333333">#FF333333</color>
+    <color name="text_gray_aaaaaa">#aaaaaa</color>
+    <color name="FFE0E0E0">#FFE0E0E0</color>
+    <color name="FFA5A5A7">#FFA5A5A7</color>
+    <color name="FF989898">#FF989898</color>
+    <color name="FFCCCCCC">#FFCCCCCC</color>
+    <color name="line_color">#d3d3d3</color>
+    <color name="FF1D1D26">#FF1D1D26</color>
+    <color name="_333333">#333333</color>
+    <color name="FFBEBEBE">#FFBEBEBE</color>
+    <color name="FFC7C7C7">#FFC7C7C7</color>
+    <color name="F5F5F5">#F5F5F5</color>
+    <color name="FFAAAAAA">#FFAAAAAA</color>
+    <color name="EDEDED">#EDEDED</color>
+
+    <!--更新-->
+    <color name="captcha_fault">#46CCF8</color>
+    <color name="main_loan_list">#585858</color>
+    <color name="popup_outline">#AAAAAA</color>
+    <color name="popup_inner">#79C784</color>
+    <color name="popup_line">#CCCCCC</color>
+    <color name="main_discount_coupon_background">#7f000000</color>
+    <color name="email_other_input">#858585</color>
+    <color name="bank_list_select">#BEBEBE</color>
+
+    <!--首页-->
+    <color name="main_big_button_46ccf8">#46CCF8</color>
+    <color name="main_commend_no_dfe6ec">#DFE6EC</color>
+    <color name="main_break_back_ee">#EEEEEE</color>
+    <color name="main_commend">#FF5D37</color>
+    <color name="main_commend_no">#C6C6C6</color>
+    <color name="main_big_bottom">#FF8767</color>
+    <color name="main_big_bottom_dcd261">#DCD261</color>
+    <color name="main_dalay_explain">#FF8667</color>
+    <color name="main_overdue">#FF6B45</color>
+    <color name="main_text_blue">#2CC0FF</color>
+
+    <color name="FFFFEBD3">#FFFFEBD3</color>
+    <color name="FFEEEEEE">#FFEEEEEE</color>
+
+    <color name="text_color_gray">#A5A5A7</color>
+    <color name="text_color_coupon">#00B4EF</color>
+
+    <color name="text_color_coupon_success">#5FD383</color>
+    <color name="text_color_coupon_fail">#FF7061</color>
+    <color name="ededed">#ededed</color>
+    <color name="main_success_tittle">#19B6FF</color>
+
+</resources>

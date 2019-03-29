@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/login_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@mipmap/login_icon" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="320dp"
+        android:layout_height="@dimen/height_50dp"
+        android:background="@null"
+        android:hint="@string/phone"
+        android:textColor="@color/FF1D1D26"
+        android:inputType="phone"
+        android:maxLength="12"
+        android:textSize="@dimen/textsize_16sp" />
+
+    <View
+        style="@style/view_line_h"
+        android:layout_width="320dp" />
+
+    <EditText
+        android:id="@+id/edit_pw"
+        android:layout_width="320dp"
+        android:layout_height="@dimen/height_50dp"
+        android:background="@null"
+        android:hint="@string/login_pw"
+        android:inputType="textPassword"
+        android:textColor="@color/FF1D1D26"
+        android:textSize="@dimen/textsize_16sp" />
+
+    <View
+        style="@style/view_line_h"
+        android:layout_width="320dp" />
+
+    <TextView
+        android:id="@+id/tv_forget_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/margin_21dp"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:onClick="onClickForgetPw"
+        android:alpha="0.5"
+        android:text="@string/forget_pw"
+        android:textColor="@color/FF1D1D26"
+        android:textSize="@dimen/textsize_14sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickLogin"
+        android:layout_marginTop="@dimen/margin_25dp"
+        android:background="@drawable/shape_ff00b4ef_5"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_18sp" />
+
+    <TextView
+        android:id="@+id/tv_go_regit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_21dp"
+        android:text="@string/go_regit" />
+</LinearLayout>

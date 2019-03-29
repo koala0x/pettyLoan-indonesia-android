@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/shape_bg_item_ffe0e0e0_5"
+              android:orientation="vertical"
+              android:padding="@dimen/padding_10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_6dp">
+
+        <TextView
+            android:id="@+id/tv_question_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Como solicita um empréstimo"
+            android:textColor="@color/theme_color"/>
+
+        <TextView
+            android:id="@+id/tv_helpcenter_helpfulness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_unhelpfulness"
+            android:drawableTop="@mipmap/ic_helpfulness"
+            android:drawablePadding="@dimen/margin_5dp"
+            android:text="@string/helpfulness"
+            android:layout_centerVertical="true"
+            android:textColor="@color/FFBEBEBE"
+            android:textSize="@dimen/textsize_11sp"/>
+
+        <TextView
+            android:id="@+id/tv_unhelpfulness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:drawableTop="@mipmap/ic_unhelpfulness"
+            android:drawablePadding="@dimen/margin_6dp"
+            android:text="@string/unhelpfulness"
+            android:textColor="@color/FFBEBEBE"
+            android:textSize="@dimen/textsize_11sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@color/FFE0E0E0"/>
+
+    <TextView
+        android:id="@+id/tv_helpcenter_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        android:paddingTop="@dimen/margin_16dp"
+        android:textColor="@color/FF333333"
+        android:textSize="@dimen/textsize_12sp"
+        tools:text="1. Baixe o aplicativo e faça cadastro com número do seu celular.
+2. Envie o pedido de empréstimo e aguarde o resultado da avaliação."/>
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xrefreshview_footer_content"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/view_bg_fff5f5f5"
+    android:padding="10dp">
+
+    <ProgressBar
+        android:id="@+id/xrefreshview_footer_progressbar"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:indeterminateTint="@color/colorPrimary"
+        android:indeterminateTintMode="src_atop" />
+
+    <RelativeLayout
+        android:id="@+id/rl_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/img_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xrl_loading_01" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_loading"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_black_ff585858"
+            android:text="@string/xrefreshview_refresh_loading" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/xrefreshview_footer_hint_textview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="@string/xrefreshview_footer_hint_normal" />
+
+    <TextView
+        android:id="@+id/xrefreshview_footer_click_textview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="@string/xrefreshview_footer_hint_ready" />
+</RelativeLayout>

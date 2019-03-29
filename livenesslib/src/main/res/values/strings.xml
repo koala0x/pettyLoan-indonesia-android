@@ -1,0 +1,31 @@
+
+<resources>
+    <string name="app_name">MyLoan</string>
+    <string name="meglive_prompt">Haga prueba con suficiente luz</string>
+    <string name="meglive_detect_initfailed">Fallo de inicializar el monitor</string>
+    <string name="meglive_camera_initfailed">Fallo de abrir cámara frontal</string>
+    <string name="meglive_getpermission_motion">Abre el celular para obtener el permiso de datos deportivos.</string>
+    <string name="meglive_phone_vertical">Mantenga el celular en posición vertical</string>
+    <string name="meglive_keep_eyes_open">No cubras tus ojos con tus manos.</string>
+    <string name="meglive_keep_mouth_open">No cubras la boca con tus manos.</string>
+    <string name="face_not_found">Expose su cara completa</string>
+    <string name="face_too_dark">Falta luz</string>
+    <string name="face_too_bright">Demasiado luz</string>
+    <string name="face_too_small">Acércate</string>
+    <string name="face_too_large">Aléjate</string>
+    <string name="face_too_blurry">Evite la luz lateral y la sombra</string>
+    <string name="face_out_of_rect">Mantenga exposando su cara en la caja</string>
+    <string name="meglive_pitch">Haga la cabeza arriba y abajo</string>
+    <string name="meglive_yaw">Moverse la cabeza</string>
+    <string name="meglive_mouth_open_closed">Abre la boca</string>
+    <string name="meglive_eye_open_closed">Parpadea</string>
+    <string name="meglive_pos_yaw_left">Moverse la cabeza a la izquierda</string>
+    <string name="meglive_pos_yaw_right">Moverse la cabeza a la derecha</string>
+
+	<string name="verify_success">Identificación con éxito</string>
+	<string name="liveness_detection_failed">Fallo de identificación facial</string>
+    <string name="liveness_detection_failed_long">Fracaso de identificación facial</string>
+    <string name="liveness_detection_failed_timeout">Fallo por sobrepasar tiempo de identificación facial</string>
+    <string name="liveness_detection_failed_action_blend">rror de  las acciones de  identificación facial</string>
+    <string name="liveness_detection_failed_not_video">Fallo de identificación facial sucesivamente</string>
+</resources>

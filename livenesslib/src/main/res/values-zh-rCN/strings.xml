@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyLoan</string>
+    <string name="meglive_prompt">请在光线充足的情况下进行检测</string>
+    <string name="meglive_detect_initfailed">检测器初始化失败</string>
+    <string name="meglive_camera_initfailed">打开前置摄像头失败</string>
+    <string name="meglive_getpermission_motion">请打开手机读取运动数据权限</string>
+    <string name="meglive_phone_vertical">请竖直握紧手机</string>
+    <string name="meglive_keep_eyes_open">请勿用手遮挡眼睛</string>
+    <string name="meglive_keep_mouth_open">请勿用手遮挡嘴巴</string>
+    <string name="face_not_found">请让我看到您的正脸</string>
+    <string name="face_too_dark">请让光线再亮点</string>
+    <string name="face_too_bright">请让光线再暗点</string>
+    <string name="face_too_small">请再靠近一些</string>
+    <string name="face_too_large">请再离远一些</string>
+    <string name="face_too_blurry">请避免侧光和背光</string>
+    <string name="face_out_of_rect">请保持脸在人脸框中</string>
+    <string name="meglive_pitch">缓慢点头</string>
+    <string name="meglive_yaw">左右摇头</string>
+    <string name="meglive_mouth_open_closed">张嘴</string>
+    <string name="meglive_eye_open_closed">眨眼</string>
+    <string name="meglive_pos_yaw_left">左转</string>
+    <string name="meglive_pos_yaw_right">右转</string>
+
+    <string name="verify_success">验证成功</string>
+    <string name="verify_success_wait">验证成功,请稍后</string>
+    <string name="liveness_detection_failed">活体检测失败</string>
+    <string name="liveness_detection_failed_long">活体检测失败,请重试</string>
+    <string name="liveness_detection_failed_timeout">活体检测超时失败</string>
+    <string name="liveness_detection_failed_action_blend">活体检测动作错误</string>
+    <string name="liveness_detection_failed_not_video">活体检测连续性检测失败</string>
+
+
+
+
+</resources>

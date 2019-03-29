@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.zhi.shi.myklik"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 200
+        versionName "2.0.0"
+        multiDexEnabled true
+        manifestPlaceholders = [GETUI_APP_ID    : "Jd3rsBpCTx6ZAWPhQkLgu1",
+                                GETUI_APP_KEY   : "sdjQVK3oFN7dpPmgt2g5e3",
+                                GETUI_APP_SECRET: "0StkJlQZB4957HJS7Y6vC5"]
+    }
+    signingConfigs {//debug和replease版本用统一签名
+        config {
+            keyAlias "mloan"
+            keyPassword "mLoan1908"
+            storeFile file("../MyLoan.jks")
+            storePassword "mLoan1908"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false                       //Debug开发版本默认false ,不混淆
+            signingConfig signingConfigs.config
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.3'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+    implementation 'com.tencent:mmkv:1.0.12'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.appcompat:appcompat:1.1.0-alpha02'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0-alpha02'
+    implementation 'com.google.android.material:material:1.1.0-alpha03'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.2'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.2'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.2'
+    implementation 'org.litepal.android:java:3.0.0'
+    implementation 'com.google.firebase:firebase-core:16.0.7'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.9'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.9'
+    implementation 'com.melnykov:floatingactionbutton:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    //    implementation 'com.github.lzyzsd:jsbridge:1.0.4'
+    //    implementation 'com.github.lzyzsd:jsbridge:1.0.4'
+    implementation 'com.getui:sdk:2.12.3.0'
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
+    implementation 'com.liulishuo.filedownloader:library:1.7.5'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'cn.finalteam:okhttpfinal:2.0.7'
+    implementation files('libs/sun.misc.BASE64Decoder.jar')
+    implementation 'top.zibin:Luban:1.1.8'
+    implementation project(':library')
+
+    implementation(name: 'android_shujumohe_ocr_beta_20180921_1.0.1', ext: 'aar')
+    implementation(name: 'android_shujumohe_livenesssdk_20180816_1.0.1', ext: 'aar')
+    implementation(name: 'android_shujumohe_sdk_beta_20190108_1.0.9.1', ext: 'aar')
+    implementation(name: 'fraudmetrix-3.2.1', ext: 'aar')
+    implementation 'com.alibaba:fastjson:1.1.70.android'
+}
+apply plugin: 'com.google.gms.google-services'

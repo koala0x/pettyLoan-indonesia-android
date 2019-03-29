@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/F5F5F5"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_30dp"
+        android:background="@color/FFFFEBD3"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_11dp"
+            android:src="@mipmap/ic_notify"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_online_hint"
+            android:textColor="@color/FFAAAAAA"
+            android:textSize="@dimen/textsize_13sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingTop="@dimen/padding_20dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:paddingBottom="@dimen/margin_16dp"
+        android:text="@string/check_online_select"
+        android:textColor="@color/FF333333"
+        android:textSize="@dimen/textsize_15sp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_loan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/margin_3dp"
+        android:paddingRight="@dimen/padding_15dp"
+        android:paddingBottom="@dimen/margin_2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_16dp"
+            android:text="@string/check_online_select_loan"
+            android:textColor="@color/FF333333"
+            android:textSize="@dimen/textsize_14sp"/>
+
+        <TextView
+            android:id="@+id/tv_chat_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/ic_helpcenter_enter"
+            android:drawablePadding="@dimen/margin_8dp"
+            android:gravity="end"
+            android:text="@string/check_online_chat_now"
+            android:textColor="@color/FFBEBEBE"
+            android:textSize="@dimen/textsize_14sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1dp"
+        android:background="@color/FFEEEEEE"/>
+
+    <LinearLayout
+        android:id="@+id/linear_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_15dp"
+        android:paddingRight="@dimen/padding_15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_20dp"
+            android:paddingBottom="18dp"
+            android:text="@string/check_online_select_product"
+            android:textColor="@color/FF333333"
+            android:textSize="@dimen/textsize_14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/ic_helpcenter_enter"
+            android:drawablePadding="@dimen/margin_8dp"
+            android:gravity="end"
+            android:text="@string/check_online_select_optimize"
+            android:textColor="@color/FFBEBEBE"
+            android:textSize="@dimen/textsize_14sp"/>
+
+
+    </LinearLayout>
+</LinearLayout>
